@@ -3,6 +3,10 @@ Imports GPModels
 Imports GPModels.Order
 
 Public Class Form1
+    '时间：2020-02-11
+    '定义果盘接口，传送门店参数
+    '当有新订单时，会产生Gp_DoOrder事件
+    '开源分享，江林 onsuper@qq.com  
     Public WithEvents Gp As New API("42215", "e381e8360778f4fc395a7f927fc787f2684ec9ca"）
 
     Private Sub 同步菜品ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 同步菜品ToolStripMenuItem.Click
